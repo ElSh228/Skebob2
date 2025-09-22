@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 2 - Веб-интерфейс</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="Logo.png" alt="Логотип" width="50">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="site-title">
+                <h1>Спортивный портал</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="content">
+            <h2>Список гиперссылок</h2>
+            <ul>
+                <li><a href="http://kubsu.ru">Официальный сайт КубГУ (HTTP)</a></li>
+                <li><a href="https://kubsu.ru">Официальный сайт КубГУ (HTTPS)</a></li>
+                <li><a href="page.html">Внутренняя страница</a></li>
+                <li><a href="#table">Перейти к таблице</a></li>
+            </ul>
+
+            <h2 id="table">Таблица боксерских поединков 2024</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Бойцы</th>
+                        <th>Весовая категория</th>
+                        <th>Дата</th>
+                        <th>Результат</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Тайсон Фьюри vs Александр Усик</td>
+                        <td>Тяжелый вес</td>
+                        <td>18.05.2024</td>
+                        <td>Победа Усика</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Сауль Альварес vs Хайме Мунгия</td>
+                        <td>Второй средний вес</td>
+                        <td>04.05.2024</td>
+                        <td>Победа Альвареса</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Девон Хейни vs Райан Гарсия</td>
+                        <td>Полусредний вес</td>
+                        <td>20.04.2024</td>
+                        <td>Победа Гарсии</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Дмитрий Бивол vs Артур Бетербиев</td>
+                        <td>Полутяжелый вес</td>
+                        <td>12.10.2024</td>
+                        <td>Победа Бивола</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td colspan="2">Наоя Иноуэ vs Луис Нери (объединенная ячейка)</td>
+                        <td>06.05.2024</td>
+                        <td>Победа Иноуэ</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Василий Ломаченко vs Джордж Камбосос</td>
+                        <td>Легкий вес</td>
+                        <td>11.05.2024</td>
+                        <td>Победа Ломаченко</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>Форма обратной связи</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Шопин Елисей. Разработка пользовательского Web-интерфейса.</p>
+        </div>
+    </footer>
+</body>
+</html>
